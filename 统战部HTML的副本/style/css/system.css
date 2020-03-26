@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{ background:none;}
+.AllSystem{
+	width:100%;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+}
+.PanelDiv{
+	width:32%;
+	float:left;
+	margin:1% 0 0 1%;
+	height:160px;
+	background:#FFF;
+	border-radius:8px;/*布局块阴影，如果不想支持低版本IE可去掉滤镜  
+	http://blog.imbolo.com/cross-browsers-css-shadow/  
+	*/  
+	box-shadow: 3px 0px 5px #ababac;  
+	-moz-box-shadow: 3px 0px 5px #ababac;  
+	-webkit-box-shadow: 3px 0px 5px #ababac;  
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#ababac');  
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#ababac')";
+}
+.PanelDiv .title{
+	width:100%;
+	height:40%;
+	border-bottom:1px solid #f6f6f6;
+	border-left:6px solid #ed6337;
+	padding:0 5%;
+	float:left;
+	letter-spacing:4px;
+	padding-top:1.5%;
+}
+.PanelDiv .title h2{
+	line-height:48px;
+	font-size:22px;
+	font-weight:normal;
+}
+.PanelDiv .content{ text-align:center; line-height:70px;}
+.PanelDiv .content .font{
+	width:40%;
+	margin:0 auto;
+	margin-top:2%;
+}
+.PanelDiv .content .font01{
+	width:50%;
+	float:left;
+	padding-left:6%;
+	margin-top:2%;
+}
+.PanelDiv .content .font h1,.PanelDiv .content .font01 h1{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:35px;
+	color:#f00808;
+	float:left;
+	font-weight:normal;
+}
+.PanelDiv .content .font h4,.PanelDiv .content .font01 h4{
+	color:#5e5d5d;
+	float:left;
+	font-size:18px;
+}
+.gray{ color:#5d5d5d;}
+
+
+.PanelDiv .content img{
+	height: auto; width: auto\9; width:90%; 
+}
+
+
+
+.PanelTable{
+	margin:0 auto;
+	margin-top:3%;
+	width:96%;
+	border:1px solid #e7e7e7;	
+}
+.trHeight{
+	height:60px;
+	line-height:60px;
+}
+.tdBg{
+	background:#f8f8f8;
+	border-bottom:1px solid #e7e7e7;
+	border-right:1px solid #e7e7e7;
+}
+.tdBg01{
+	border-bottom:1px solid #e7e7e7;
+	border-right:1px solid #e7e7e7;
+}
+.PanelTable input[type="text"]{
+	width:96%;
+	height:40px;
+	line-height:40px;
+	border-radius:3px;
+	border:1px solid #ebebeb;
+	padding-left:10px;
+	margin-left:2%;
+}
+.PanelTable label{
+	float:left;
+	margin-left:2%;
+}
+.PanelTable textarea{
+	width:98.1%;
+	border-radius:3px;
+	border:1px solid #ebebeb;
+	padding-left:10px;
+	margin-left:0.9%;
+	margin-top:1%;
+}
+.PanelBtn input[type="button"]{
+	width:20%;
+	height:40px;
+	margin-top:4%;
+	border-radius:30px;
+	background:#4b9ff8;
+	text-align:center;
+	color:#FFF;
+	font-size:16px;
+}
+.PanelBtn input[type="button"].reset{ background:#b2b1b1;}
+
+.PanelReset{
+	width:90%;
+	margin:0 auto;
+	margin-top:5%;
+}
+.PanelReset form textarea{
+	width:100%;
+	border-radius:3px;
+	border:1px solid #ebebeb;
+	padding-left:10px;
+	margin-top:0.5%;
+}

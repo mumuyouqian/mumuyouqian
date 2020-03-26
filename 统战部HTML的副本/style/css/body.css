@@ -1,0 +1,758 @@
+@charset "utf-8";
+/* CSS Document */
+.LoginWeb{
+	background:url(../images/bg.png) no-repeat top center;
+	width:100%;
+	height:734px;
+	margin:0 auto;
+	padding:0;
+}
+.PanelLogin{
+	width:715px;
+	margin:0 auto;
+	position:relative;
+	top:80px;
+	text-align:center;
+}
+.BoxLogin{
+	margin: 0 auto;  
+	width:715px;
+	margin-top:60px;
+}
+
+.LoginCon{
+	float:right;  
+	width: 675px;  
+	background-color:rgba(255,255,255,0.8);
+	height: 445px; /*布局块阴影，如果不想支持低版本IE可去掉滤镜  
+	http://blog.imbolo.com/cross-browsers-css-shadow/  
+	*/  
+	box-shadow: 3px 0px 30px #ababac;  
+	-moz-box-shadow: 3px 0px 30px #ababac;  
+	-webkit-box-shadow: 3px 0px 30px #ababac;  
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#ababac');  
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#ababac')";
+	/*  
+	背景半透明  
+	http://blog.csdn.net/zenwong/archive/2008/08/29/2846546.aspx  
+	
+	filter: alpha(opacity=80); /*IE
+	-moz-opacity: 0.8; /*Mozilla
+	opacity: 0.8; /*FF*/ /*  
+	圆角效果，不考虑低版本IE  
+	http://blog.imbolo.com/creating-rounded-corners-with-css/  
+	*/  
+	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);
+	-moz-border-radius: 6px;  
+	-webkit-border-radius: 6px;  
+	border-radius: 6px;
+	padding-top:30px;
+}
+
+.LoginLeft{
+	width:340px;
+	float:left;
+}
+.LoginLeft .title{
+	background:url(../images/loginTitle.png) no-repeat;
+	width:184px;
+	height:61px;
+	line-height:50px;
+	text-align:center;
+	color:#FFF;
+	font-size:20px;
+	margin-left:-17px;
+	margin-bottom:20px;
+}
+.LoginLeft table{ margin-left:40px;}
+.LoginLeft input[type="text"],.LoginLeft input[type="password"]{
+	width:295px;
+	height:35px;
+	line-height:21px;
+	border-radius: 4px;
+	color:#818282;
+	border:1px solid #ccc;
+	padding-left:35px;
+	background:url(../images/icon.png) no-repeat 7px 5px;
+	font-size:14px;
+}
+.LoginLeft input[type="password"]{ background:url(../images/icon01.png) no-repeat 7px 5px;}
+.LoginLeft a{ color:#F00;}
+
+.LoginLeft input[type="button"]{
+	width:145px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	background:#ef2437;
+	color:#FFF;
+	font-size:14px;
+	border-radius: 4px;
+	border:0;
+}
+.LoginLeft input[type="button"].reg{background:#b6b5b5; color:#FFF;}
+
+.LoginRight{ 
+	width:235px;
+	float:left;
+}
+.LoginRight .title{
+	width:184px;
+	height:61px;
+	line-height:50px;
+	text-align:left;
+	color:#ef2437;
+	font-size:20px;
+	margin-bottom:20px;
+}
+.LoginRight input[type="text"],.LoginRight input[type="password"]{
+	width:235px;
+	height:35px;
+	line-height:21px;
+	color:#818282;
+	border:none;
+	border-bottom:1px solid #ccc;
+	padding-left:35px;
+	background:url(../images/icon.png) no-repeat 7px 5px;
+	font-size:14px;
+}
+.LoginRight input[type="password"]{ background:url(../images/icon01.png) no-repeat 7px 5px;}
+.LoginRight input[type="button"]{
+	width:235px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	background:#ef2437;
+	color:#FFF;
+	font-size:14px;
+	border-radius: 4px;
+	border:0;
+}
+.LoginTip{
+	margin:15px 40px;
+	width:595px;
+	text-align:left;
+	font-size:14px;
+	color:#7c7a7a;
+	line-height:22px;
+}
+
+/*.AllWeb{
+	background:url(../images/bg.png) no-repeat top center;
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	padding:0;
+}*/
+
+
+
+.PanelHead{
+	width:100%;
+	height:90px;
+	background:#FFF;
+	border-bottom:3px solid #121212;
+}
+.PanelLogo{
+	background:url(../images/logo.png) no-repeat 0 20px;
+	width:405px;
+	height:90px;
+	padding:20px 0;
+	border-bottom:3px solid #f7263f;
+	float:left;
+	margin-left:3%;
+}
+.passwordBtn{
+	width:100px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	color:#FFF;
+	background:#d4392f;
+	float:left;
+	border-radius:20px;
+	margin-right:15px;
+}
+.passwordBtn a{ color:#FFF;}
+
+.closeBtn{
+	width:110px;
+	height:30px;
+	line-height:18px;
+	border-radius:20px;
+	background:#dbdcdc;
+	float:left;
+	padding:6px 10px;
+}
+.closeBtn a{ color:#404141; font-weight:bold;}
+
+.PanelContent{
+	width: 85%;  
+	background-color:rgba(255,255,255,0.8);
+	height:auto; /*布局块阴影，如果不想支持低版本IE可去掉滤镜  
+	http://blog.imbolo.com/cross-browsers-css-shadow/  
+	*/  
+	box-shadow: 3px 0px 30px #ababac;  
+	-moz-box-shadow: 3px 0px 30px #ababac;  
+	-webkit-box-shadow: 3px 0px 30px #ababac;  
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#ababac');  
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#ababac')";
+	/*  
+	背景半透明  
+	http://blog.csdn.net/zenwong/archive/2008/08/29/2846546.aspx  
+	
+	filter: alpha(opacity=80); /*IE
+	-moz-opacity: 0.8; /*Mozilla
+	opacity: 0.8; /*FF*/ /*  
+	圆角效果，不考虑低版本IE  
+	http://blog.imbolo.com/creating-rounded-corners-with-css/  
+	*/  
+	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);
+	-moz-border-radius: 6px;  
+	-webkit-border-radius: 6px;  
+	border-radius: 6px;
+	margin:2.5% auto;
+	padding-bottom:2%;
+	margin-bottom:2%;
+}
+.PanelConTitle{
+	width:94%;
+	height:95px;
+	line-height:95px;
+	border-bottom:2px solid #dfdede;
+	margin:0 3%;
+	text-align:center;
+}
+.rightBtn,.rightBtn01{
+	width:85px;
+	height:25px;
+	border-radius:5px;
+	border:1px solid #d8271c;
+	text-align:center;
+	color:#d8271c;
+	line-height:22px;
+	margin-top:30px;
+}
+.numBg{
+	width:15px;
+	height:15px;
+	border-radius:15px;
+	background:#d8271c;
+	color:#FFF;
+	line-height:15px;
+	text-align:center;
+	font-size:12px;
+	position:relative;
+	top:-30px;
+	left:75px;
+}
+.rightBtn02{
+	width:85px;
+	height:25px;
+	border-radius:5px;
+	background:#d8271c;
+	text-align:center;
+	color:#fff;
+	line-height:22px;
+	margin-top:30px;
+}
+
+.PanelConJs{
+	margin:1.5% 3%;
+	width:94%;
+	line-height:24px;
+}
+.rightBtn01{ width:53px; margin:0;}
+
+
+.PanelSub{
+	width:92%;
+	margin:3% 4%;
+	margin-bottom:0;
+}
+.PanelSub01{
+	width:85%;
+	margin:1% 7.5%;
+	margin-bottom:0;
+}
+ul.ConUL li,ul.ConUL01 li{
+	width:20%;
+	height:280.5px;
+	text-align:center;
+	float:left;
+	margin:0 2.5%;
+	border:2px dashed #f798a1;
+	border-radius:10px;
+	padding-top:40px;
+	line-height:40px;
+}
+
+ul.ConUL li img{  
+   height: auto; width: auto\9; width:45%; 
+}
+
+ul.ConUL01 li{ line-height:30px; height:350px; width:23%; margin:0 1%;}
+ul.ConUL01 li img{  
+   height: auto; width: auto\9; width:48%; margin:9% 0;
+}
+ul.ConUL li:hover,ul.ConUL01 li:hover{
+	/*filter: alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=white,gradientType=0);  	-ms-filter: alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=white,gradientType=0);
+    background-color: #ffffff; 
+    background: -moz-linear-gradient(top, red, rgba(0, 0, 255, 0.5));  
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fd9faa), to(rgba(0, 0, 255, 0.5)));  
+    background: -o-linear-gradient(top, red, rgba(0, 0, 255, 0.5));  */
+	background-image: linear-gradient(#ffffff, #fd9faa);
+}
+ul.ConUL li a,ul.ConUL01 li a{ color:#5a5a5a;}
+ul.ConUL li span{
+	display:none;
+}
+ul.ConUL li:hover a:hover span{
+	background:#0F0; display:block;
+	position: relative;
+	top:-225px;
+	left:0px;
+	width:80%;
+	height:69%;
+	border-radius:10px;
+	background-color:rgba(41,41,41,0.5);
+	color:#FFF;
+	font-size:1.5em;
+	text-align:center;
+	line-height:40px;
+	padding:20% 10%;
+	z-index:100;
+	
+}
+
+.PanelFlow{
+	width:6.5%;
+	height:30%;
+	float:right;
+	position:absolute;
+	right:3%;
+	top:30%;
+	font-size:14px;
+}
+
+ul.flowUI li{
+	line-height:22px;
+	float:left;
+	width:100%;
+	padding-top:10px;
+}
+ul.flowUI li span.dian{
+	width:40px;
+	height:40px;
+	border-radius:40px;
+	background:#e8e7e7;
+	float:left;
+	margin-right:5px;
+}
+ul.flowUI li.line{
+	height:20px;
+	width:2px;
+	background:#CCC;
+	margin:8px 0 0px 20px;
+}
+ul.flowUI li span.dian .icon{ 
+	background:url(../images/icon03.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+ul.flowUI li span.dian .icon01{ 
+	background:url(../images/icon04.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+ul.flowUI li span.dian .icon02{ 
+	background:url(../images/icon05.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+ul.flowUI li span.dian .icon03{ 
+	background:url(../images/icon06.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+ul.flowUI li span.dian .icon04{ 
+	background:url(../images/icon19.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+ul.flowUI li span.dian .icon05{ 
+	background:url(../images/icon20.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+ul.flowUI li span.dian .icon06{ 
+	background:url(../images/icon21.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+ul.flowUI li span.dian .icon07{ 
+	background:url(../images/icon22.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+ul.flowUI li span.dian.select{
+	background:#f7263f;
+}
+ul.flowUI li span.dian.select .icon{ 
+	background:url(../images/icon03Hit.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+ul.flowUI li span.dian.select .icon01{ 
+	background:url(../images/icon04Hit.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+ul.flowUI li span.dian.select .icon02{ 
+	background:url(../images/icon05Hit.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+ul.flowUI li span.dian.select .icon03{ 
+	background:url(../images/icon06Hit.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+ul.flowUI li span.dian.select .icon04{ 
+	background:url(../images/icon19Hit.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+ul.flowUI li span.dian.select .icon05{ 
+	background:url(../images/icon20Hit.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+ul.flowUI li span.dian.select .icon06{ 
+	background:url(../images/icon21Hit.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+ul.flowUI li span.dian.select .icon07{ 
+	background:url(../images/icon22Hit.png) no-repeat center center;
+	background-size:50% 50%;
+	width:40px;
+	height:40px;
+}
+
+
+
+
+
+
+.PanelContent input[type="button"]{
+	width:145px;
+	height:45px;
+	text-align:center;
+	color:#FFF;
+	line-height:45px;
+	background:#d8271c;
+	border-radius:8px;
+	font-size:16px;
+}
+.PanelContent input[type="button"].gray{ background:#afadad;}
+
+.SubContent{
+	width: 85%;  
+	height:auto; /*布局块阴影，如果不想支持低版本IE可去掉滤镜  
+	http://blog.imbolo.com/cross-browsers-css-shadow/  
+	*/  
+	box-shadow: 3px 0px 30px #ababac;  
+	-moz-box-shadow: 3px 0px 30px #ababac;  
+	-webkit-box-shadow: 3px 0px 30px #ababac;  
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#ababac');  
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#ababac')";  
+	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);
+	-moz-border-radius: 6px 0;  
+	-webkit-border-radius: 6px 0;  
+	border-radius:6px 6px 0 0;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1.0) 0%, rgba(255, 255, 255, 1.0) 50%, rgba(255, 255, 255, 0.1) 98%, #FFFFFF 100%);
+	padding:40px 40px;
+	font-size:14px;
+	margin:3% auto;
+	margin-bottom:0;
+}
+
+.border{ border-bottom:1px solid #cd1409; padding-bottom:20px; color:#cd1409;}
+.SubContent table{ line-height:26px;}
+.SubContent table input[type="button"]{
+	width:90px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	color:#FFF;
+	background:#d4392f;
+	float:left;
+	margin-left:20px;
+	border:0;
+	border-radius:15px;
+}
+.PanelConTable{
+	border:1px solid #e7e7e7; background:#FFF; color:#333;
+}
+
+.trHeight{
+	height:50px;
+	line-height:50px;
+}
+.trHeight01{
+	height:45px;
+	line-height:45px;
+}
+.trHeight02{
+	height:30px;
+	line-height:30px;
+}
+.trHeight03{
+	height:70px;
+	line-height:70px;
+}
+.tdBg{
+	background:#f8f8f8;
+	border-bottom:1px solid #e7e7e7;
+	border-right:1px solid #e7e7e7;
+}
+.tdBg01{
+	border-bottom:1px solid #e7e7e7;
+	border-right:1px solid #e7e7e7;
+}
+.PanelConTable input[type="text"]{
+	width:98%;
+	height:35px;
+	line-height:35px;
+	border-radius:6px;
+	border:1px solid #ebebeb;
+	padding-left:10px;
+	margin-left:10px;
+}
+.PanelConTable label{ float:left; margin:0 30px 0 30px;}
+
+.PanelConTable select{
+	float:left;
+	margin-left:10px;
+	width:25%;
+	font-size:16px;
+}
+
+
+.SubTable{
+	color:#333;
+
+}
+
+.SubTable input[type="text"]{
+	width:98%;
+	height:35px;
+	line-height:35px;
+	border-radius:6px;
+	border:1px solid #ebebeb;
+	padding-left:10px;
+	margin-left:10px;
+}
+
+
+.SubTable input[type="radio"]{
+	margin:0;
+	padding:0;
+	margin-left:-15px;
+}
+.SubTable input[type="button"]{
+	width:10px;
+	height:9px;
+	text-align:center;
+	border-radius:0px;
+	background:url(../images/icon11.gif) no-repeat;
+	margin-left:10px;
+}
+
+.PanelConTable input[type="button"],.btn,.btn01{
+	width:10px;
+	height:9px;
+	text-align:center;
+	border-radius:0px;
+	background:url(../images/icon11.gif) no-repeat;
+	border:1px;
+	float:left;
+	margin-left:10px;
+}
+.PanelConTable input[type="button"]{ 
+	float:none;
+	position:relative;
+	top:20px;
+	margin-left:0;
+}
+
+
+.btn,.btn01{
+	width:10px;
+	height:9px;
+	text-align:center;
+	border-radius:0px;
+	background:url(../images/icon11.gif) no-repeat;
+	border:1px;
+	float:left;
+	margin-left:10px;
+}
+.btn01{background:url(../images/icon12.gif) no-repeat;}
+
+.SubConTable{
+	margin:0 auto;
+	margin-top:20px;
+	border:1px solid #e7e7e7; 
+	background:#FFF; 
+	color:#333;
+}
+.SubConTable input[type="text"]{
+	width:600px;
+	height:35px;
+	line-height:35px;
+	border-radius:6px;
+	border:1px solid #ebebeb;
+	padding-left:10px;
+	margin-left:10px;
+}
+.SubConTable textarea{
+	width:91.2%;
+	height:152px;
+	border:1px solid #ebebeb;
+	margin-left:10px;
+	margin-top:10px;
+}
+.PanelFoot{
+	background:#f9fafb;
+	width:100%;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	color:#333;
+}
+
+
+
+.PanelFlow01{
+	width:45%;
+	margin:0 auto;
+	margin-top:30px;
+}
+.flowIcon,.flowIconHit{
+	width:65px;
+	height:65px;
+	float:left;
+	text-align:center;
+	line-height:65px;
+	border-radius:65px;
+	background:#e8e7e7;
+}	
+
+.flowIcon .icon04{ 
+	background:url(../images/icon19.png) no-repeat center center;
+	width:65px;
+	height:65px;
+}
+.flowIcon .icon05{ 
+	background:url(../images/icon20.png) no-repeat center center;
+	width:65px;
+	height:65px;
+}
+.flowIcon .icon06{ 
+	background:url(../images/icon21.png) no-repeat center center;
+	width:65px;
+	height:65px;
+}
+.flowIcon .icon07{ 
+	background:url(../images/icon22.png) no-repeat center center;
+	width:65px;
+	height:65px;
+}
+.flowIconHit{ background:#f7263f;}
+.flowIconHit .icon{ 
+	background:url(../images/icon03Hit.png) no-repeat center center;
+	width:65px;
+	height:65px;
+}
+.flowIconHit .icon04{ 
+	background:url(../images/icon19Hit.png) no-repeat center center;
+	width:65px;
+	height:65px;
+}
+.flowIconHit .icon05{ 
+	background:url(../images/icon20Hit.png) no-repeat center center;
+	width:65px;
+	height:65px;
+}
+.flowIconHit .icon06{ 
+	background:url(../images/icon21Hit.png) no-repeat center center;
+	width:65px;
+	height:65px;
+}
+.flowIconHit .icon07{ 
+	background:url(../images/icon22Hit.png) no-repeat center center;
+	width:65px;
+	height:65px;
+}
+
+.flowLine,.flowLineHit,.flowLine01,.flowLine01Hit{
+	background:url(../images/arrow.png) no-repeat;
+	width:204px;
+	height:10px;
+	margin:3% 2%;
+	float:left;
+}
+.flowLine01Hit{ background:url(../images/arrowHit.png) no-repeat;}
+
+ul.flowUL01 li{
+	line-height:24px;
+	float:left;
+	font-weight:bold;
+	text-align:center;
+	margin-top:5px;
+	color:#666;	
+	width:120px; 
+	margin-right:22.5%;
+}
+ul.flowUL01 li.hitLi{
+	color:#f7263f;
+}
+
+
+/*飘图*/
+.pic {
+    position: fixed;
+    width: 200px;
+    height:60px;
+	background:url(../images/2.png) no-repeat;
+	float:right;
+}
+.absolute{position: absolute; right:220px; bottom: 100px;}
+/*飘图*/
+
+
+#tm2008style div.tag_select{display:block;color:#000;width:103px;height:22px;background:transparent url("../images/tm2008-select.gif") no-repeat 0 0;padding:0 10px;line-height:22px;}
+#tm2008style div.tag_select_hover{display:block;color:#000;width:103px;height:22px;background:transparent url("../images/tm2008-select.gif") no-repeat 0 -22px;padding:0 10px;line-height:22px;}
+#tm2008style div.tag_select_open{display:block;color:#000;width:103px;height:22px;background:transparent url("../images/tm2008-select.gif") no-repeat 0 -44px;padding:0 10px;line-height:22px;}
+
+#tm2008style ul.tag_options{position:absolute;margin:0;list-style:none;background:transparent url("../images/tm2008-select.gif") no-repeat left bottom;width:103px;padding:0 0 1px;margin:0;}
+#tm2008style ul.tag_options li{background:transparent url("../images/tm2008-select.gif") repeat-y -102px 0;display:block;width:103px;padding:0 10px;height:22px;text-decoration:none;line-height:22px;color:#000;}
+
+#tm2008style ul.tag_options li.open_hover{background:transparent url("../images/tm2008-select.gif") no-repeat 0 -88px;color:#000}
+#tm2008style ul.tag_options li.open_selected{background:transparent url("../images/tm2008-select.gif") no-repeat 0 -66px;color:#19555F}

@@ -1,0 +1,70 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/* ------css_reset-----------*/
+iframe{margin: 0;padding: 0;border: none;border: 0;}
+/*------for-html5----------*/
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block;list-style: outside none none;
+    margin: 0;
+    padding: 0;box-sizing:border-box;}
+/*------for-gap&font----------*/
+ul, ol,li,dl,dt,dd,p,i,h1,h2,h3,h4,h5,h6,div,input,button,select,textarea,table,tr,td,em{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;box-sizing:border-box;
+}
+h1,h2,h3,h4,h5,h6,th,dt,em{ font-weight:normal;}
+i,em,address{font-style:normal;}
+
+
+
+body{font-size:18px; color: #535353;}
+
+h1{ font-size:28px; font-weight:bold;}
+h2{ font-size:24px; font-weight:bold;}
+h3{ font-size:24px; font-weight:bold; font-family:"Banks Script";}
+h4{ font-size:20px;}
+h5{ font-size: 1.5em; font-weight:bold;}
+h6{ font-size:16px; font-weight:bold;}
+
+a{ color:#535353;}
+a:link,a:visited{ color:#1365bb; text-decoration:none;}
+a:hover,a:active{ color: #1365bb; text-decoration:none;}
+a:focus{blr:expression(this.onFocus=this.blur());outline:none;}/*支持IE--隐藏聚焦虚线框*/
+.f_left{ float:left;}
+.f_right{ float:right;}
+/*========coler default====
+
+a:link,a:visited{ color:#1b8eff; text-decoration: underline;}
+a:hover,a:active{ color: #ff8066; text-decoration:none;}
+====*/
+html,body{    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; /*position: relative;*/}
+html,body{margin: 0;padding: 0; width:100%;}
+html,body,input,select,button{font-family:Microsoft Yahei,NSimSun,SimSun;}
+img{border: 0;}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.clear{ clear:both;}
+/*=======css_reset=====end============*/
+
+/* --------clearfix-------*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear:both;
+	visibility: hidden;
+}
+.clearfix {
+*zoom: 1;
+}/* IE6IE7 */
+/*=========clearfix=====end=========*/
+
+html,body{ margin: 0; padding:0; width: 100%; height: 100%; font-family:微软雅黑; background:#FFF; background:url(../images/bg.png) no-repeat top center;}
+
+

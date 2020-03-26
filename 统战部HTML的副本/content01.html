@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=8; IE=9; IE=EDGE" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="renderer" content="webkit"/><!--极速-->
+<meta name="format-detection" content="telephone=no,email=no,address=no"><!--ieedge没有下划线-->
+<title></title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<!--ie678 htm5+maxminhack-->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.src.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="style/css/common.css" type="text/css"></link>
+<link rel="stylesheet" href="style/css/body.css" type="text/css"></link>
+</head>
+
+<body>
+<!--**********too_oldbrowser_update_ie7-************-->
+<!--[if lt IE 8]>
+<div class="too_oldbrowser redtxt clearfix" id="too_oldbrowser_info">
+<i onClick="document.getElementById('too_oldbrowser_info').style.display='none';" title="Close">X</i>
+<span>请升级您的浏览器！您的IE浏览器版本太低了，为了更棒的浏览体验，推荐您使用 <a title="下载Firefox火狐浏览器" href="https://www.mozilla.org/zh-CN/firefox/" target="_blank">Firefox火狐浏览器</a></span></div>
+<![endif]-->
+ <div class="absolute">
+    <div class="pic"></div>            
+</div>
+<div class="AllWeb">
+	<div class="PanelHead">
+        <div class="PanelLogo"></div>
+        <div class="f_right" style=" margin-right:3%; margin-top:35px;">
+        	<div class="passwordBtn"><a href="#" title="">修改密码</a></div>
+        	<div class="closeBtn"><img src="style/images/icon02.png" width="16" height="17" alt="" class="f_left"><a href="#" title="" class="f_right">退出系统</a></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="PanelWeb">
+    	<div class="PanelContent">
+       	  	<div class="PanelConTitle">
+            	<h1 class="f_left">基本信息</h1>
+                <div class="f_right">
+                	<div class="rightBtn02">暂存</div>
+                </div>
+            </div>
+            <div class="PanelSub" style="margin-top:1%;">
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr class="trHeight">
+                    <td width="49%" align="right"><h4>我是（当前申请人）：</h4></td>
+                    <td width="2%"></td>
+                    <td width="49%"><form name="form2" method="post" action="" style="font-size:22px;">
+                        <label style="margin-left:20px;">
+                          <input type="radio" name="RadioGroup2" value="考生" id="RadioGroup2_0">
+                          考生</label>
+                        <label style="margin-left:20px;">
+                          <input type="radio" name="RadioGroup2" value="考生家长" id="RadioGroup2_1">
+                          考生家长</label>
+                    </form></td>
+                  </tr>
+                </table>
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="PanelConTable" style="margin-top:1%">
+                	<tr class="trHeight">
+                    	<td colspan="4" class="tdBg01"><h4 style="margin-left:10px;">考生信息</h4></td>
+                    </tr>
+                  <tr class="trHeight">
+                    <td class="tdBg" width="150" align="center">考生姓名</td>
+                    <td class="tdBg01" width="280"><input name="" type="text"></td>
+                    <td class="tdBg" width="150" align="center">性别</td>
+                    <td class="tdBg01" width="280"><form name="form1" method="post" action="">
+                        <label>
+                          <input type="radio" name="RadioGroup1" value="男" id="RadioGroup1_0">
+                          男</label>
+                        <label>
+                          <input type="radio" name="RadioGroup1" value="女" id="RadioGroup1_1">
+                          女</label>
+                    </form></td>
+                  </tr>
+                  <tr class="trHeight">
+                    <td class="tdBg" align="center">出生年月</td>
+                    <td class="tdBg01"><input name="" type="text"></td>
+                    <td class="tdBg" align="center">户籍地址</td>
+                    <td class="tdBg01">
+                    	<select name="province" id="province">
+                            <option value="请选择">请选择</option>
+                        </select>
+                        <select name="city" id="city">
+                            <option value="请选择">请选择</option>
+                        </select>
+                        <select name="town" id="town">
+                            <option value="请选择">请选择</option>
+                        </select>
+                    </td>
+                    <script type="text/javascript" src="style/js/jquery-1.11.3.min.js"></script>
+					<script type="text/javascript" src="style/js/area.js"></script>
+					<script type="text/javascript" src="style/js/select.js"></script>   
+                  </tr>
+                  <tr class="trHeight">
+                    <td class="tdBg" align="center">身份证号码</td>
+                    <td class="tdBg01"><input name="" type="text"></td>
+                    <td class="tdBg" align="center">联系方式</td>
+                    <td class="tdBg01"><input name="" type="text"></td>
+                  </tr>
+                  <tr class="trHeight">
+                    <td class="tdBg" align="center">联系地址</td>
+                    <td colspan="3" class="tdBg01"><input name="" type="text" style="width:98%;"></td>
+                  </tr>
+                	<tr class="trHeight">
+                    	<td colspan="4" class="tdBg01"><h4 style="margin-left:10px;">考生家长信息</h4></td>
+                    </tr>
+                  <tr class="trHeight">
+                    <td class="tdBg" width="150" align="center">考生家长姓名</td>
+                    <td class="tdBg01" width="280"><input name="" type="text"></td>
+                    <td class="tdBg" width="150" align="center">与考生关系</td>
+                    <td class="tdBg01" width="280"><input name="" type="text"></td>
+                  </tr>
+                  <tr class="trHeight">
+                    <td class="tdBg" align="center">考生家长国籍</td>
+                    <td class="tdBg01"><input name="" type="text"></td>
+                    <td class="tdBg" align="center">联系方式</td>
+                    <td class="tdBg01"><input name="" type="text"></td>
+                  </tr>
+                  <tr class="trHeight">
+                    <td class="tdBg" align="center">国内居民身份证号或护照号码：</td>
+                    <td colspan="3" class="tdBg01"><input name="" type="text" style="width:37.5%;"></td>
+                  </tr>
+                </table>
+                <div class="clear"></div>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:20px;">
+                  <tr>
+                    <td align="right"><input name="" type="button" class="gray" value="上一步" onClick="window.location.href = 'content.html'"></td>
+                    <td>&nbsp;</td>
+                    <td><input name="" type="button" value="下一步" onClick="window.location.href = 'content02.html'"></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+        <div class="PanelFlow">
+        	<ul class="flowUI">
+            	<li><span class="dian select"><div class="icon"></div></span>选择考生身份类型</li>
+                <li class="line"></li>
+                <li><span class="dian select"><div class="icon01"></div></span>填写基本信息</li>
+                <li class="line"></li>
+                <li><span class="dian"><div class="icon02"></div></span>资料上传</li>
+                <li class="line"></li>
+                <li><span class="dian"><div class="icon03"></div></span>签署承诺书</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<!--底部-->
+<div class="PanelFoot">
+	<p>© 2020 上海中信信息发展股份有限公司 技术支持</p>
+</div>
+<!--底部-->
+</body>
+</html>        
